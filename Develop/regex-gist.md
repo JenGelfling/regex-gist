@@ -1,8 +1,11 @@
-# Title (replace with your title)
+# Regex gist
 
-Introductory paragraph (replace this with your text)
+In this gist, I will explain the different components of a specific regular expression that validates an input as an email address. This will help a user understand how the regex works by breaking down the different components involved.
 
 ## Summary
+
+This regex matches an email:
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
@@ -45,5 +48,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Look-ahead and Look-behind
 
 ## Author
+
+https://github.com/JenGelfling
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
