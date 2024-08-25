@@ -1,13 +1,12 @@
 # Regex gist
 
-In this gist, I will explain the different components of a specific regular expression that validates an input as an email address. This will help a user understand how the regex works by breaking down the different components involved.
+In this gist, I will explain the different components of a specific regular expression (regex) that validates an input as an email address. This will help a user understand how the regex works by breaking down the different components involved.
 
 ## Summary
 
-This regex matches an email:
+The following is the regex I will break down to show how it works:
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
-
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This regex matches an email. It does so by making sure an input matches a specific format. The format is some number of lowercase letters, numbers, underscores, periods, or hyphens, followed by an @ symbol, followed by some number of numbers, letters, periods or hyphens, followed by a period, followed by 2 to 6 lowercase letters or periods.
 
 ## Table of Contents
 
