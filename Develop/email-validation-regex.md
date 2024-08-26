@@ -15,15 +15,12 @@ This regex makes sure an email is corrently entered. It does so by making sure a
 - [Character Classes](#character-classes)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
 ### Anchors
 
-The anchors in this regex are the carrot top `^` and the dollar `$` symbols. 
+The anchors in this regex are the caret top `^` and the dollar `$` symbols. 
 
 The `^` indicates that it is the beginning of the expression. There cannot be any characters before the `^` or it won't be a match for the expression. The `$` indicates that it is the end of the expression. There cannot be any characters after the `$` or it won't be a match for the expression.
 
@@ -57,14 +54,6 @@ Group one is `([a-z0-9_\.-]+)`. Group two is `([\da-z\.-]+)`. Group three is `([
 
 The quantifiers used in this regex, `+` and `{2,6}`, are both greedy. This means that they will try to match the maximum amount as opposed to the minimum amount.
 
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
-
 ## Author
 
-https://github.com/JenGelfling
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Ben and I have worked in the tech field for over a decade. I've recently started my coding journey by taking a full stack bootcamp and am excited to learn and understand how to build cool things. You can check out some of the things I've worked on at my [Github page](https://github.com/JenGelfling).
