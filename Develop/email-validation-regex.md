@@ -13,9 +13,7 @@ This regex makes sure an email is corrently entered. It does so by making sure a
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
@@ -47,13 +45,17 @@ The second character class is `[\da-z\.-]`. This indicates that the numbers zero
 
 The final character class is `[a-z\.]`. This indicates that the letters a through z and a period are part of this character class.
 
-### Flags
-
 ### Grouping and Capturing
 
-### Bracket Expressions
+Grouping and capturing is defined by what is inside the round brackets `()`.
+
+There is always a group zero, which is the complete regex.
+
+Group one is `([a-z0-9_\.-]+)`. Group two is `([\da-z\.-]+)`. Group three is `([a-z\.]{2,6})`. This regex doesn't do anything with these groups, but does create groups that can be acted upon. So in an example, with an email of test@testing.com, where I want to replace the username/unique info "test" with XXX to hide it, I could user `XXX@$2.$3` to replace it.
 
 ### Greedy and Lazy Match
+
+The quantifiers used in this regex, `+` and `{2,6}`, are both greedy. This means that they will try to match the maximum amount as opposed to the minimum amount.
 
 ### Boundaries
 
